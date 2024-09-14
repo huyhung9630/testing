@@ -3,7 +3,7 @@ import seleniumbase
 import time
 import os
 
-def lazymint_list(url):
+def lazymint_list():
     with SB(
         extension_dir=os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'temp', 'metamask-chrome'))
         ) as sb:
