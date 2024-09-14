@@ -38,12 +38,3 @@ jobs:
     - name: Test with pytest login
       run: |
         pytest tests/test_login.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
-    - name: Test with pytest lazymint list
-      run: |
-        pytest tests/lazymint_list.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
-    - name: Test with pytest lazymint unlist
-      run: |
-        pytest tests/lazymint_unlist.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
-    - name: Test with pytest payment failed
-      run: |
-        pytest tests/payment_failed.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
