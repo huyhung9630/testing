@@ -37,4 +37,13 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest login
       run: |
-        pytest test_login.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
+        pytest tests/test_login.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
+    - name: Test with pytest lazymint list
+      run: |
+        pytest tests/lazymint_list.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
+    - name: Test with pytest login
+      run: |
+        pytest tests/lazymint_unlist.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
+    - name: Test with pytest login
+      run: |
+        pytest tests/payment_failed.py --browser=chrome --headless -v -s --junit-xml=junit/test-results.xml
