@@ -5,7 +5,7 @@ import os
     
 def test_metamask():
     with SB(
-        extension_dir=os.path.abspath(os.path.join(os.path.dirname(__file__), 'temp', 'metamask-chrome'))
+        extension_dir=os.path.abspath(os.path.join(os.path.dirname(__file__),'..', 'temp', 'metamask-chrome'))
         ) as sb:
         sb.sleep(5)
         sb.switch_to_window(1)
