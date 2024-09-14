@@ -57,7 +57,7 @@ import os
 #         sb.switch_to_window(3)
 #         pass
 
-def lazymint_list():
+def test_lazymint_list():
     with SB(
         extension_dir=os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'temp', 'metamask-chrome'))
         ) as sb:
@@ -179,5 +179,5 @@ def lazymint_list():
 #         pass
 if __name__ == "__main__":
     # test_metamask()
-    lazymint_list()
+    test_lazymint_list()
     # lazymint_unlist()
