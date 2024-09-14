@@ -5,7 +5,7 @@ import os
     
 def test_metamask():
     with SB(
-        extension_dir=os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'temp', 'metamask-chrome'))
+        extension_dir=os.path.abspath(os.path.join(os.path.dirname(__file__), 'temp', 'metamask-chrome'))
         ) as sb:
         sb.sleep(5)
         sb.switch_to_window(1)
@@ -55,7 +55,6 @@ def test_metamask():
         sb.click('button:contains("Confirm")')
         sb.sleep(7)
         sb.switch_to_window(3)
-        pass
 
 if __name__ == "__main__":
     test_metamask()
