@@ -55,7 +55,7 @@ def test_metamask():
         sb.click('button:contains("Confirm")')
         sb.sleep(7)
         sb.switch_to_window(3)
-
+        pass
 
 if __name__ == "__main__":
     test_metamask()
